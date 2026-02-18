@@ -84,13 +84,16 @@ The application uses an App Token to authenticate the frontend on the backend fo
 
 ```
 App-Token: token
-
+```
 The application uses JWT Bearer token authentication for the getInfo endpoint. Include the token in the Authorization header:
 
 ```
 Authorization: Bearer <your-jwt-token>
 ```
 
+## Api Doumentation
+
+Swagger Collection on http://localhost:3000/api
 
 ## Linting & Formatting
 
