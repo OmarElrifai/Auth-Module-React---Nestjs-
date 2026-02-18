@@ -32,7 +32,6 @@ export async function login(formData:FormData){
     })
 
     try {
-        console.log("request ---- ",request);
         const response = await request.json();
         return response;
     }catch(err){

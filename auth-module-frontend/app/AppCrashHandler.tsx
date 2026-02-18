@@ -28,9 +28,7 @@ class AppCrashHandler extends Component<ErrorBoundaryProps, State> {
 
     componentDidCatch(error: Error, errorInfo: ErrorInfo) {
         setTimeout(()=>{
-            // location.reload();
             this.setState({ hasError: false });
-            console.log("no probec")
         },2000)
         console.error(error, errorInfo);
     }
