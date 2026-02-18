@@ -76,33 +76,21 @@ The API runs on `http://localhost:3000` by default.
 |--------|----------|-------------|
 | POST | /user/register | Register new user |
 | POST | /user/login | User login |
-| GET | /user/profile | Get user profile (protected) |
-| PUT | /user/profile | Update user profile (protected) |
-| DELETE | /user/profile | Delete user (protected) |
+| GET | /user/getInfo | Get user profile (protected) |
 
 ## Authentication
 
-The application uses JWT Bearer token authentication. Include the token in the Authorization header:
+The application uses an App Token to authenticate the frontend on the backend for each request:
+
+```
+App-Token: token
+
+The application uses JWT Bearer token authentication for the getInfo endpoint. Include the token in the Authorization header:
 
 ```
 Authorization: Bearer <your-jwt-token>
 ```
 
-## Testing
-
-```bash
-# Unit tests
-npm run test
-
-# Unit tests (watch mode)
-npm run test:watch
-
-# Test coverage
-npm run test:cov
-
-# E2E tests
-npm run test:e2e
-```
 
 ## Linting & Formatting
 
