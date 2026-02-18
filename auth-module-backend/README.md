@@ -95,15 +95,6 @@ Authorization: Bearer <your-jwt-token>
 
 Swagger Collection on http://localhost:3000/api
 
-## Linting & Formatting
-
-```bash
-# Lint
-npm run lint
-
-# Format (Prettier)
-npm run format
-```
 
 ## CORS
 
