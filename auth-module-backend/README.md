@@ -1,6 +1,6 @@
-# NestJS Application
+# Auth Application
 
-A NestJS backend application with MongoDB integration, JWT authentication, and user management.
+A Login/Register Module built as a NestJS backend application with MongoDB integration, JWT authentication, and user management apis.
 
 ## Tech Stack
 
@@ -24,7 +24,7 @@ src/
     ├── user.controller.ts  # User API endpoints
     ├── user.controller.spec.ts
     ├── dtos/              # Data Transfer Objects
-    ├── services/          # Business logic
+    ├── services/          # User module services
     ├── schemas/           # MongoDB schemas
     └── guard/             # Auth guards
 ```
