@@ -1,8 +1,54 @@
-# Welcome to React Router!
+# Register and Login Pages 
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A Frontend app that integrates with auth apis to provide authentication functionalites.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+
+## Project Structure
+
+```
+auth-module-frontend/
+├── .dockerignore
+├── .gitignore
+├── Dockerfile
+├── environment.tsx
+├── package.json
+├── package-lock.json
+├── react-router.config.ts
+├── README.md
+├── tsconfig.json
+├── vite.config.ts
+├── .idea/                     # IDE configuration
+├── .react-router/              # React Router cache
+├── app/                        # Main application source
+│   ├── app.css
+│   ├── AppCrashHandler.tsx
+│   ├── root.tsx
+│   ├── routes.ts
+│   ├── auth/                   # Authentication module
+│   │   ├── auth.tsx
+│   │   ├── services/
+│   │   │   └── userManagement.tsx
+│   │   ├── shared/
+│   │   │   └── pop-up.tsx
+│   │   ├── sign-in/
+│   │   │   ├── sign-in.css
+│   │   │   └── sign-in.tsx
+│   │   └── sign-up/
+│   │       ├── sign-up.css
+│   │       └── sign-up.tsx
+│   ├── routes/
+│   │   └── home.tsx
+│   └── welcome/
+│       ├── logo-dark.svg
+│       ├── logo-light.svg
+│       └── welcome.tsx
+├── build/                      # Production build output
+│   ├── client/
+│   └── server/
+├── node_modules/               # Dependencies
+└── public/                     # Static assets
+```
 
 ## Features
 
@@ -42,27 +88,7 @@ Create a production build:
 npm run build
 ```
 
-## Deployment
 
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
 
 ### DIY Deployment
 
